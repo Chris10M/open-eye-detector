@@ -6,6 +6,12 @@ A resnet inspired CNN model to predict if a person's eye is open or closed.
 
 The main use case for this, is while in face recognition we have to ensure the person remains active and not asleep while doing the auth process, so we have trained the model to ouput closed eyes and some-what drowsy eyes.
 
+**Eye open -- Green**
+**Eye close-- Red**
+
+![image_1](demo_images/open.png)
+![image_2](demo_images/close.png)
+
 
 ### Contents
 1. [Installation](#installation)
@@ -19,35 +25,18 @@ The main use case for this, is while in face recognition we have to ensure the p
   3) OpenCV
   4) dlib
   
-  just use pip3 
-
-### Download
-A **Pre-trained test model** is available at this Link [GoogleDrive](https://drive.google.com/open?id=1EC98US1ck0wF0lDE4HFjySxzlWCv75jh), dowload it and place it in models/ path.
-
+  just run,
+  ```
+  pip3 install -r requirements.txt
+  ```
+  to instal the dependencies.
+  
 ### Demo
-If you've cloned the repo and then downloaded the pre-trained model, run 
+If you've cloned the repo and then install the dependecies, run
 ```
-./dependencies/install_dependencies.sh
-./startup.sh
+python3 main.py
 ```
-
-Now you could acess the websever using **POST** Reqeust using the endpoint, 
-```
-http://0.0.0.0:52118/test-tensorflow-serving-api
-```
-with content type as "application/json"
-```
-{
-  "url": "some-image-url"
-}
-```
-or if you want to give a base64Image input then,
-```
-{
-  "base64Image": "base64_image_data"
-}
-```
-to facilitate a response.
+the webcamera will be used to detect the face and the eyes, then the prediction will be done.
 
 ### Issues
 If you encounter any issues, please create an issue tracker.
