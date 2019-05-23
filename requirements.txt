@@ -5,5 +5,5 @@ numpy==1.16.2
 imutils==0.5.2
 dlib==19.17.0
 face_recognition==1.2.3
-requests==2.18.4
+requests==2.20.0
 Keras==2.2.4
