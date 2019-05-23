@@ -1,0 +1,9 @@
+scipy==1.2.1
+tensorflow==1.13.1
+opencv_contrib_python==4.0.0.21
+numpy==1.16.2
+imutils==0.5.2
+dlib==19.17.0
+face_recognition==1.2.3
+requests==2.18.4
+Keras==2.2.4
