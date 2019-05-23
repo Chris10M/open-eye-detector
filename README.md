@@ -6,7 +6,9 @@ A resnet inspired CNN model to predict if a person's eye is open or closed.
 
 The main use case for this, is while in face recognition we have to ensure the person remains active and not asleep while doing the auth process, so we have trained the model to ouput closed eyes and some-what drowsy eyes.
 
-**Eye open -- Green                                           Eye close-- Red**
+**Eye open -- Green** 
+ 
+**Eye close-- Red**
 
 ![image_1](demo_images/open.png)
 ![image_2](demo_images/close.png)
