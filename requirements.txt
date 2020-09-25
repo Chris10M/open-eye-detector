@@ -1,5 +1,5 @@
 scipy==1.2.1
-tensorflow==1.13.1
+tensorflow==1.15.4
 opencv_contrib_python==4.0.0.21
 numpy==1.16.2
 imutils==0.5.2
