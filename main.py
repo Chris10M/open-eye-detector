@@ -1,35 +1,26 @@
 from keras import backend as K
-import imutils
 from keras.models import load_model
 import numpy as np
-import keras
-import requests
-from scipy.spatial import distance as dist
 from imutils import face_utils
 import time
 import dlib
-import cv2,os,sys
-import collections
-import random
+import cv2
 import face_recognition
-import pickle
-import math
-import threading
-import tensorflow as tf
+from tensorflow import compat, keras
 
 num_cores = 4
 
 num_CPU = 1
 num_GPU = 0
 
-config = tf.ConfigProto(intra_op_parallelism_threads=num_cores,
+config = compat.v1.ConfigProto(intra_op_parallelism_threads=num_cores,
                         inter_op_parallelism_threads=num_cores, 
                         allow_soft_placement=True,
                         device_count = {'CPU' : num_CPU,
                                         'GPU' : num_GPU}
                        )
 
-session = tf.Session(config=config)
+session = compat.v1.Session(config=config)
 K.set_session(session)
 
 
